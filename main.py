@@ -5,7 +5,7 @@ from user_agent import generate_user_agent
 import logging
 from config import *
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-SUDO = int(os.environ.get("SUDO","5359109940"))
+SUDO = int(os.environ.get("SUDO","5072874938"))
 Heroku = os.environ.get("HEROKU", "APP-NAME")
 APP_URL = "https://"+ Heroku +".herokuapp.com/" + BOT_TOKEN
 from flask import Flask, request
@@ -30,12 +30,12 @@ def start(message):
 		bot.send_message(message.chat.id, text=f"- أهلاً {message.from_user.first_name}  !\n\n- بوت تشكير يوزرات تلجرام 🧑‍💻\n\n♻️ لوحة التحكم الخاصه بك ♨️",reply_markup=mas)
 	else:
 		rr = types.InlineKeyboardMarkup(row_width=2)
-		me = types.InlineKeyboardButton(text="مجهول",url="https://t.me/k_8_u")
-		he = types.InlineKeyboardButton(text="حلم",url="https://t.me/q_o_e")
-		ch = types.InlineKeyboardButton(text="▶ قناة البوت ◀",url="https://t.me/c_p_8")
+		me = types.InlineKeyboardButton(text="🇮🇱 𓏺 𝖮َِ𝗅َِ𝗂َِ𝖵َِ𝖾𝖱 . َِ",url="https://t.me/lll7p")
+		he = types.InlineKeyboardButton(text="𝘏𝘢𝘪𝘢𝘥𝘳",url="https://t.me/l_d_z")
+		ch = types.InlineKeyboardButton(text="▶ قناة البوت ◀",url="https://t.me/AAAWY")
 		rr.add(me,he)
 		rr.add(ch)
-		bot.send_message(message.chat.id,text=f"هذا البوت مدفوع وليس لك\nللتفعيل راسل :",reply_markup=rr)
+		bot.send_message(message.chat.id,text=f"هذا البوت مدفوع وليس لك\n للتفعيل راسل المطور @LLL7P:",reply_markup=rr)
                
 @bot.callback_query_handler(func=lambda call: True)
 def masg(call):
@@ -102,7 +102,7 @@ def masg(call):
 			if response.text.find('If you have <strong>Telegram</strong>, you can contact <a class="tgme_username_link"')>=0 and h not in gg:
 				ok+=1
 				sk+=1
-				bot.send_message(call.message.chat.id,f"‹ يوزرات تلي متاحه ✓\n────── • ✧✧ • ──────\n‹ صدتلك يوزر : @{h}\n────── • ✧✧ • ──────\n•مطور البوت @K_8_U")
+				bot.send_message(call.message.chat.id,f"‹ يوزرات تلي متاحه ✓\n────── • ✧✧ • ──────\n‹ صدتلك يوزر : @{h}\n────── • ✧✧ • ──────\n•مطور البوت @lll7p")
 				
 			else:
 				cp+=1
